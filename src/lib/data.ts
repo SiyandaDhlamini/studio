@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+
+import { Github, Linkedin, Mail } from 'lucide-react';
 import type { StaticImageData } from 'next/image';
 
 export const navLinks = [
@@ -100,7 +101,15 @@ export const education = [
   },
 ];
 
-export const certifications = [
+export type Certification = {
+  institution: string;
+  name: string;
+  period: string;
+  description: string;
+  pdfUrl?: string;
+}
+
+export const certifications: Certification[] = [
   {
     institution: 'Google',
     name: 'Professional Python Certificate',

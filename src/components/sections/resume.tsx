@@ -1,10 +1,45 @@
-import { Download, ExternalLink } from 'lucide-react';
+
+'use client';
+
+import { Download, ExternalLink, Upload } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { education, experience, certifications } from '@/lib/data';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from '@/components/ui/card';
+import { education, experience, certifications as defaultCertifications } from '@/lib/data';
+import React, { useState, useRef } from 'react';
+import type { Certification } from '@/lib/data';
+import { Label } from '../ui/label';
 
 export function ResumeSection() {
+  const [certifications, setCertifications] = useState<Certification[]>(defaultCertifications);
+  const fileInputRefs = useRef<(HTMLInputElement | null)[]>([]);
+
+  const handleFileChange = (
+    event: React.ChangeEvent<HTMLInputElement>,
+    index: number
+  ) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const newCertifications = [...certifications];
+      newCertifications[index] = {
+        ...newCertifications[index],
+        pdfUrl: URL.createObjectURL(file),
+      };
+      setCertifications(newCertifications);
+    }
+  };
+
+  const handleUploadClick = (index: number) => {
+    fileInputRefs.current[index]?.click();
+  };
+
+
   return (
     <SectionWrapper id="resume" className="bg-secondary/50">
       <div className="text-center mb-12">
@@ -81,16 +116,31 @@ export function ResumeSection() {
                   <CardContent className="flex-grow">
                     <p className="text-muted-foreground text-sm">{item.description}</p>
                   </CardContent>
-                  {item.pdfUrl && (
-                    <CardFooter>
-                      <Button asChild variant="outline" size="sm" className="ml-auto">
+                    <CardFooter className="flex-wrap gap-2 justify-end">
+                      <input
+                        type="file"
+                        accept="application/pdf"
+                        onChange={(e) => handleFileChange(e, index)}
+                        className="hidden"
+                        ref={(el) => (fileInputRefs.current[index] = el)}
+                      />
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        onClick={() => handleUploadClick(index)}
+                      >
+                        Upload PDF
+                        <Upload className="ml-2 h-4 w-4" />
+                      </Button>
+                      {item.pdfUrl && (
+                      <Button asChild variant="outline" size="sm">
                         <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
                           View Certificate
                           <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
                       </Button>
+                      )}
                     </CardFooter>
-                  )}
                 </Card>
               ))}
             </div>
