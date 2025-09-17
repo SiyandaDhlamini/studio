@@ -94,11 +94,11 @@ export const experience = [
 
 export const education = [
   {
-    institution: 'University of Technology',
-    degree: 'B.Sc. in Computer Science',
-    period: '2020 - 2024',
+    institution: 'College of Cape Town',
+    degree: 'Electrical Engineering',
+    period: '2015',
     description:
-      'Focused on software engineering, data structures, and algorithms. Graduated with honors.',
+      '',
   },
 ];
 
