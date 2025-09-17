@@ -112,7 +112,7 @@ export type Certification = {
 export const certifications: Certification[] = [
   {
     institution: 'Google',
-    name: 'Professional Python Certificate',
+    name: 'Python for Data Science and AI',
     period: '2024',
     description: 'A professional certificate demonstrating proficiency in Python for data science and automation.',
     pdfUrl: 'https://www.credly.com/badges/f2cbe4f3-1bab-404d-a451-fb21eecdfa1c/linked_in_profile',
