@@ -13,7 +13,7 @@ export const navLinks = [
 export const socialLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/siyanda-dhlamini',
+    href: 'https://www.linkedin.com/in/siyanda-dhlamini-4b8821203',
     icon: Linkedin,
   },
   {
