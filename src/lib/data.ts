@@ -21,7 +21,7 @@ export const socialLinks = [
     href: 'https://github.com/siyandadhlamini',
     icon: Github,
   },
-  { name: 'Email', href: 'mailto:siyanda.d@example.com', icon: Mail },
+  { name: 'Email', href: 'mailto:siyandanxele68@gmail.com', icon: Mail },
 ];
 
 export const projects = [
