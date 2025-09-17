@@ -115,6 +115,6 @@ export const certifications: Certification[] = [
     name: 'Professional Python Certificate',
     period: '2024',
     description: 'A professional certificate demonstrating proficiency in Python for data science and automation.',
-    pdfUrl: 'https://www.linkedin.com/posts/activity-7373617553736282112-Wpzd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPpu4wB6MNSIiRLBLeXvxjY99vO2yVb7bs',
+    pdfUrl: 'https://www.credly.com/badges/f2cbe4f3-1bab-404d-a451-fb21eecdfa1c/linked_in_profile',
   },
 ];
