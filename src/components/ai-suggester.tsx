@@ -40,7 +40,7 @@ const formSchema = z.object({
   userPreferences: z.string().optional(),
 });
 
-const defaultDescription = `My portfolio has a clean and modern design with a light gray background (#f5f6fa). The primary color is a royal blue (#1e3799), and the accent color for highlights is black (#2d3436). I use 'Space Grotesk' for headlines and 'Inter' for body text. The layout is a single page with sections for Home, About, Projects, Skills, Resume, and Contact.`;
+const defaultDescription = `My portfolio has a futuristic, dark theme. The background is a deep, dark blue (#191924). The primary color is a vibrant cyan/aqua for highlights (#89f7fe), and the accent color is an electric magenta/purple (#c056f7). I use 'Space Grotesk' for headlines and 'Inter' for body text. The layout is a single page with sections for Home, About, Projects, Skills, Resume, and Contact.`;
 
 export function AiSuggester() {
   const [isLoading, setIsLoading] = useState(false);
