@@ -106,5 +106,6 @@ export const certifications = [
     name: 'Professional Python Certificate',
     period: '2024',
     description: 'A professional certificate demonstrating proficiency in Python for data science and automation.',
+    pdfUrl: '/siyanda_dhlamini_python_certificate.pdf',
   },
 ];

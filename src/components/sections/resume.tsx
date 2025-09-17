@@ -1,7 +1,7 @@
-import { Download } from 'lucide-react';
+import { Download, ExternalLink } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { education, experience, certifications } from '@/lib/data';
 
 export function ResumeSection() {
@@ -72,15 +72,25 @@ export function ResumeSection() {
             </h3>
             <div className="space-y-4">
               {certifications.map((item, index) => (
-                <Card key={index}>
-                  <CardHeader>
+                <Card key={index} className="flex flex-col">
+                  <CardHeader className="flex-grow">
                     <p className="text-muted-foreground">{item.period}</p>
                     <CardTitle className="font-headline">{item.name}</CardTitle>
                     <p className="font-semibold text-primary">{item.institution}</p>
                   </CardHeader>
-                   <CardContent>
+                  <CardContent className="flex-grow">
                     <p className="text-muted-foreground text-sm">{item.description}</p>
                   </CardContent>
+                  {item.pdfUrl && (
+                    <CardFooter>
+                      <Button asChild variant="outline" size="sm" className="ml-auto">
+                        <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
+                          View Certificate
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </a>
+                      </Button>
+                    </CardFooter>
+                  )}
                 </Card>
               ))}
             </div>
