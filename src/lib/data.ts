@@ -99,3 +99,12 @@ export const education = [
       'Focused on software engineering, data structures, and algorithms. Graduated with honors.',
   },
 ];
+
+export const certifications = [
+  {
+    institution: 'Google',
+    name: 'Professional Python Certificate',
+    period: '2024',
+    description: 'A professional certificate demonstrating proficiency in Python for data science and automation.',
+  },
+];

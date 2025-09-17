@@ -2,7 +2,7 @@ import { Download } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { education, experience } from '@/lib/data';
+import { education, experience, certifications } from '@/lib/data';
 
 export function ResumeSection() {
   return (
@@ -46,23 +46,44 @@ export function ResumeSection() {
             ))}
           </div>
         </div>
-        <div>
-          <h3 className="font-headline text-2xl font-semibold mb-6">
-            Education
-          </h3>
-          <div className="space-y-4">
-            {education.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <p className="text-muted-foreground">{item.period}</p>
-                  <CardTitle className="font-headline">{item.degree}</CardTitle>
-                  <p className="font-semibold text-primary">{item.institution}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+        <div className='space-y-12'>
+          <div>
+            <h3 className="font-headline text-2xl font-semibold mb-6">
+              Education
+            </h3>
+            <div className="space-y-4">
+              {education.map((item, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <p className="text-muted-foreground">{item.period}</p>
+                    <CardTitle className="font-headline">{item.degree}</CardTitle>
+                    <p className="font-semibold text-primary">{item.institution}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="font-headline text-2xl font-semibold mb-6">
+              Certifications
+            </h3>
+            <div className="space-y-4">
+              {certifications.map((item, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <p className="text-muted-foreground">{item.period}</p>
+                    <CardTitle className="font-headline">{item.name}</CardTitle>
+                    <p className="font-semibold text-primary">{item.institution}</p>
+                  </CardHeader>
+                   <CardContent>
+                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
