@@ -123,6 +123,6 @@ export const certifications: Certification[] = [
     name: 'AI Essentials',
     period: '',
     description: 'Through the AI Essentials program, I gained practical knowledge and experience in Artificial Intelligence (AI) and Machine Learning (ML), including deep learning, generative AI, and automation. I also developed strong skills in data analysis and explored the application of AI in B2B sales and business contexts. This training has provided me with a solid foundation to apply AI/ML techniques in solving real-world problems and building intelligent solutions.',
-    pdfUrl: 'https://www.coursera.org/account/accomplishments/records/PWSKBGRX13BB',
+    pdfUrl: 'https://coursera.org/share/4d8758f946440f9126ffd3fd8e567c19',
   },
 ];
