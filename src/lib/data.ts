@@ -114,7 +114,7 @@ export const certifications: Certification[] = [
     institution: 'Google',
     name: 'Python for Data Science and AI',
     period: '2025',
-    description: 'A professional certificate demonstrating proficiency in Python for data science and automation.',
+    description: 'I have gained core skills in Python programming, including knowledge of critical data structures, programming fundamentals, and hands-on experience with key Python libraries for data science. I can apply this knowledge to work with data, build applications for data analysis, and confidently use Python tools to solve real-world problems. My training has equipped me with sufficient Python expertise to work effectively with libraries commonly used in data science.',
     pdfUrl: 'https://www.credly.com/badges/f2cbe4f3-1bab-404d-a451-fb21eecdfa1c/linked_in_profile',
   },
 ];
