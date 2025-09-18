@@ -75,15 +75,7 @@ export const skills = {
   ],
 };
 
-export const experience = [
-  {
-    company: 'Code University',
-    role: 'Teaching Assistant',
-    period: '2022 - 2023',
-    description:
-      'Assisted in teaching introductory programming courses. Led lab sessions, graded assignments, and provided one-on-one support to students.',
-  },
-];
+export const experience = [];
 
 export const education = [
   {
