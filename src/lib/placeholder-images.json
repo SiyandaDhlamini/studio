@@ -24,6 +24,24 @@
       "description": "Screenshot of a mobile travel app project.",
       "imageUrl": "https://picsum.photos/seed/project3/600/400",
       "imageHint": "mobile app"
+    },
+    {
+      "id": "certificate-python",
+      "description": "Python for Data Science and AI Certificate",
+      "imageUrl": "https://picsum.photos/seed/cert1/800/600",
+      "imageHint": "certificate document"
+    },
+    {
+      "id": "certificate-ai",
+      "description": "AI Essentials Certificate",
+      "imageUrl": "https://picsum.photos/seed/cert2/800/600",
+      "imageHint": "certificate document"
+    },
+    {
+      "id": "certificate-genai",
+      "description": "Generative AI Certificate",
+      "imageUrl": "https://picsum.photos/seed/cert3/800/600",
+      "imageHint": "certificate document"
     }
   ]
 }

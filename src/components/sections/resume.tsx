@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, ExternalLink } from 'lucide-react';
+import { Download, ExternalLink, Eye } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import {
@@ -11,8 +11,18 @@ import {
   CardTitle,
   CardFooter,
 } from '@/components/ui/card';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 import { education, experience, certifications } from '@/lib/data';
 import React from 'react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function ResumeSection() {
   return (
@@ -81,28 +91,59 @@ export function ResumeSection() {
               Certifications
             </h3>
             <div className="space-y-4">
-              {certifications.map((item, index) => (
-                <Card key={index} className="flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <p className="text-muted-foreground">{item.period}</p>
-                    <CardTitle className="font-headline">{item.name}</CardTitle>
-                    <p className="font-semibold text-primary">{item.institution}</p>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground text-sm">{item.description}</p>
-                  </CardContent>
+              {certifications.map((item, index) => {
+                const certImage = PlaceHolderImages.find(
+                  (img) => img.id === item.imageUrl
+                );
+                return (
+                  <Card key={index} className="flex flex-col">
+                    <CardHeader className="flex-grow">
+                      <p className="text-muted-foreground">{item.period}</p>
+                      <CardTitle className="font-headline">{item.name}</CardTitle>
+                      <p className="font-semibold text-primary">{item.institution}</p>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                    </CardContent>
                     <CardFooter className="flex-wrap gap-2 justify-end">
+                      {certImage && (
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <Button variant="secondary" size="sm">
+                              View Certificate <Eye className="ml-2 h-4 w-4" />
+                            </Button>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-3xl">
+                            <DialogHeader>
+                              <DialogTitle>{item.name}</DialogTitle>
+                              <DialogDescription>
+                                {item.institution} - {item.period}
+                              </DialogDescription>
+                            </DialogHeader>
+                            <div className="relative aspect-[4/3] w-full">
+                              <Image
+                                src={certImage.imageUrl}
+                                alt={`Certificate for ${item.name}`}
+                                fill
+                                className="object-contain"
+                                data-ai-hint={certImage.imageHint}
+                              />
+                            </div>
+                          </DialogContent>
+                        </Dialog>
+                      )}
                       {item.pdfUrl && (
-                      <Button asChild variant="outline" size="sm">
-                        <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
-                          View Certificate
-                          <ExternalLink className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
+                        <Button asChild variant="outline" size="sm">
+                          <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
+                            Verify Certificate
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
                       )}
                     </CardFooter>
-                </Card>
-              ))}
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </div>
