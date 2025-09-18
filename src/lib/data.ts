@@ -77,13 +77,6 @@ export const skills = {
 
 export const experience = [
   {
-    company: 'Tech Innovators Inc.',
-    role: 'Frontend Developer Intern',
-    period: 'Summer 2023',
-    description:
-      'Contributed to the development of a major client-facing web application. Collaborated with designers and backend engineers to implement new features and improve user experience.',
-  },
-  {
     company: 'Code University',
     role: 'Teaching Assistant',
     period: '2022 - 2023',
