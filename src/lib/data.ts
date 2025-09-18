@@ -132,4 +132,11 @@ export const certifications: Certification[] = [
     description: 'I completed a Generative AI course where I gained foundational knowledge, practical skills, and a functional understanding of how generative AI works. The course included exploration of the latest research in Gen AI, focusing on how organizations are leveraging cutting-edge technology to create value. I received instruction from expert AWS AI practitioners, learning directly from professionals who actively build and deploy AI in real-world business use cases.',
     imageUrl: 'certificate-genai'
   },
+  {
+    institution: '',
+    name: 'AI Prompt Engineering',
+    period: '',
+    description: '',
+    imageUrl: 'certificate-prompt'
+  }
 ];
