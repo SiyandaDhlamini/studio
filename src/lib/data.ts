@@ -75,7 +75,14 @@ export const skills = {
   ],
 };
 
-export const experience = [];
+export const experience = [
+  {
+    role: 'Office Assistant',
+    company: 'Training Force',
+    period: '2020',
+    description: '',
+  },
+];
 
 export const education = [
   {
