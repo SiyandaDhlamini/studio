@@ -21,21 +21,27 @@ export function ContactSection() {
       <div className="mx-auto max-w-4xl">
         <Card>
           <CardContent className="p-6 md:p-8">
-            <form className="grid gap-6">
+            <form 
+              action="mailto:siyanda.dhlamini@capaciti.org.za"
+              method="POST"
+              encType="text/plain"
+              className="grid gap-6"
+            >
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your Name" />
+                  <Input id="name" name="name" placeholder="Your Name" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" />
+                  <Input id="email" name="email" type="email" placeholder="your@email.com" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Your message..."
                   className="min-h-[150px]"
                 />
