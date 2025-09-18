@@ -136,7 +136,7 @@ export const certifications: Certification[] = [
     institution: '',
     name: 'AI Prompt Engineering',
     period: '',
-    description: '',
+    description: 'I completed an AI Prompt Engineering course where I developed skills in prompt engineering, generative AI, and large language modeling. The course strengthened my ability to design effective prompts for tools like ChatGPT, while also emphasizing data ethics, ideation, creativity, and research. This training equipped me with the knowledge to responsibly and creatively apply generative AI in solving real-world problems.',
     imageUrl: 'certificate-prompt'
   }
 ];
