@@ -124,20 +124,20 @@ export const certifications: Certification[] = [
     name: 'AI Essentials',
     period: '',
     description: 'Through the AI Essentials program, I gained practical knowledge and experience in Artificial Intelligence (AI) and Machine Learning (ML), including deep learning, generative AI, and automation. I also developed strong skills in data analysis and explored the application of AI in B2B sales and business contexts. This training has provided me with a solid foundation to apply AI/ML techniques in solving real-world problems and building intelligent solutions.',
-    imageUrl: 'certificate-ai'
+    pdfUrl: '/AI Essentials Certificate.pdf'
   },
   {
     institution: '',
     name: 'Generative AI',
     period: '',
     description: 'I completed a Generative AI course where I gained foundational knowledge, practical skills, and a functional understanding of how generative AI works. The course included exploration of the latest research in Gen AI, focusing on how organizations are leveraging cutting-edge technology to create value. I received instruction from expert AWS AI practitioners, learning directly from professionals who actively build and deploy AI in real-world business use cases.',
-    imageUrl: 'certificate-genai'
+    pdfUrl: '/Generative AI Certificate.pdf'
   },
   {
     institution: '',
     name: 'AI Prompt Engineering',
     period: '',
     description: 'I completed an AI Prompt Engineering course where I developed skills in prompt engineering, generative AI, and large language modeling. The course strengthened my ability to design effective prompts for tools like ChatGPT, while also emphasizing data ethics, ideation, creativity, and research. This training equipped me with the knowledge to responsibly and creatively apply generative AI in solving real-world problems.',
-    imageUrl: 'certificate-prompt'
+    pdfUrl: '/AI Prompt Engineering Certificate.pdf'
   }
 ];

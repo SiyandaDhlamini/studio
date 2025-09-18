@@ -107,38 +107,13 @@ export function ResumeSection() {
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                     </CardContent>
                     <CardFooter className="flex-wrap gap-2 justify-end">
-                      {item.pdfUrl ? (
+                      {item.pdfUrl && (
                          <Button variant="secondary" size="sm" asChild>
                            <Link href={item.pdfUrl} target="_blank">
                               View Certificate <Eye className="ml-2 h-4 w-4" />
                            </Link>
                          </Button>
-                      ) : certImage ? (
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <Button variant="secondary" size="sm">
-                              View Certificate <Eye className="ml-2 h-4 w-4" />
-                            </Button>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-3xl">
-                            <DialogHeader>
-                              <DialogTitle>{item.name}</DialogTitle>
-                              <DialogDescription>
-                                {item.institution} - {item.period}
-                              </DialogDescription>
-                            </DialogHeader>
-                            <div className="relative aspect-[4/3] w-full">
-                              <Image
-                                src={certImage.imageUrl}
-                                alt={`Certificate for ${item.name}`}
-                                fill
-                                className="object-contain"
-                                data-ai-hint={certImage.imageHint}
-                              />
-                            </div>
-                          </DialogContent>
-                        </Dialog>
-                      ) : null}
+                      )}
                     </CardFooter>
                   </Card>
                 );
