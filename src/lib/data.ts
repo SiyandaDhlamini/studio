@@ -80,7 +80,7 @@ export const experience = [
     role: 'Rental Sales Agent',
     company: 'First Car Rental',
     period: '2023',
-    description: '',
+    description: 'As a Car Rental Agent, I assist customers with their vehicle rental needs by handling reservations, explaining rental terms, and preparing agreements. I process payments, verify licenses, and provide information on vehicle features, upgrades, and insurance options. I also inspect vehicles before and after rentals, report any damages, and make sure each car is clean and ready for the next customer. In this role, I focus on delivering excellent customer service, promoting company services, and maintaining accurate records to ensure smooth and professional operations.',
   },
   {
     role: 'Office Assistant',
