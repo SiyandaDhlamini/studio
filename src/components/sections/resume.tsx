@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, Eye } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import {
@@ -14,6 +14,7 @@ import {
 import { education, experience, certifications } from '@/lib/data';
 import React from 'react';
 import Link from 'next/link';
+import { Download } from 'lucide-react';
 
 export function ResumeSection() {
   return (
