@@ -86,7 +86,7 @@ export const experience = [
     role: 'Office Assistant',
     company: 'Training Force',
     period: '2020',
-    description: '',
+    description: 'As an Office Assistant, I provide basic administrative support to ensure the smooth daily operations of the office. My responsibilities include answering phones, managing emails, filing documents, and handling data entry tasks. I assist with scheduling appointments, organizing meetings, and maintaining office supplies. I also support staff with routine clerical duties and help direct visitors or clients to the appropriate person. This role requires good communication, attention to detail, and the ability to multitask in a professional office environment.',
   },
 ];
 
