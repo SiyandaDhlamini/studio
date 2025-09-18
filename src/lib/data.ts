@@ -107,7 +107,6 @@ export type Certification = {
   name: string;
   period: string;
   description: string;
-  pdfUrl?: string;
   imageUrl?: string;
 };
 
@@ -117,7 +116,6 @@ export const certifications: Certification[] = [
     name: 'Python for Data Science and AI',
     period: '2025',
     description: 'I have gained core skills in Python programming, including knowledge of critical data structures, programming fundamentals, and hands-on experience with key Python libraries for data science. I can apply this knowledge to work with data, build applications for data analysis, and confidently use Python tools to solve real-world problems. My training has equipped me with sufficient Python expertise to work effectively with libraries commonly used in data science.',
-    pdfUrl: 'https://www.credly.com/badges/f2cbe4f3-1bab-404d-a451-fb21eecdfa1c/linked_in_profile',
     imageUrl: 'certificate-python'
   },
   {
@@ -125,7 +123,6 @@ export const certifications: Certification[] = [
     name: 'AI Essentials',
     period: '',
     description: 'Through the AI Essentials program, I gained practical knowledge and experience in Artificial Intelligence (AI) and Machine Learning (ML), including deep learning, generative AI, and automation. I also developed strong skills in data analysis and explored the application of AI in B2B sales and business contexts. This training has provided me with a solid foundation to apply AI/ML techniques in solving real-world problems and building intelligent solutions.',
-    pdfUrl: 'https://coursera.org/share/4d8758f946440f9126ffd3fd8e567c19',
     imageUrl: 'certificate-ai'
   },
   {
@@ -133,7 +130,6 @@ export const certifications: Certification[] = [
     name: 'Generative AI',
     period: '',
     description: 'I completed a Generative AI course where I gained foundational knowledge, practical skills, and a functional understanding of how generative AI works. The course included exploration of the latest research in Gen AI, focusing on how organizations are leveraging cutting-edge technology to create value. I received instruction from expert AWS AI practitioners, learning directly from professionals who actively build and deploy AI in real-world business use cases.',
-    pdfUrl: '',
     imageUrl: 'certificate-genai'
   },
 ];

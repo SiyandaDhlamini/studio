@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, ExternalLink, Eye } from 'lucide-react';
+import { Download, Eye } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import {
@@ -131,14 +131,6 @@ export function ResumeSection() {
                             </div>
                           </DialogContent>
                         </Dialog>
-                      )}
-                      {item.pdfUrl && (
-                        <Button asChild variant="outline" size="sm">
-                          <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
-                            Verify Certificate
-                            <ExternalLink className="ml-2 h-4 w-4" />
-                          </a>
-                        </Button>
                       )}
                     </CardFooter>
                   </Card>
