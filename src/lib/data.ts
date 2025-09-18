@@ -108,6 +108,7 @@ export type Certification = {
   period: string;
   description: string;
   imageUrl?: string;
+  pdfUrl?: string;
 };
 
 export const certifications: Certification[] = [
@@ -116,7 +117,7 @@ export const certifications: Certification[] = [
     name: 'Python for Data Science and AI',
     period: '2025',
     description: 'I have gained core skills in Python programming, including knowledge of critical data structures, programming fundamentals, and hands-on experience with key Python libraries for data science. I can apply this knowledge to work with data, build applications for data analysis, and confidently use Python tools to solve real-world problems. My training has equipped me with sufficient Python expertise to work effectively with libraries commonly used in data science.',
-    imageUrl: 'certificate-python'
+    pdfUrl: '/Python Certificate.pdf'
   },
   {
     institution: '',

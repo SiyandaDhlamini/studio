@@ -23,6 +23,7 @@ import { education, experience, certifications } from '@/lib/data';
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
 
 export function ResumeSection() {
   return (
@@ -106,7 +107,13 @@ export function ResumeSection() {
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                     </CardContent>
                     <CardFooter className="flex-wrap gap-2 justify-end">
-                      {certImage && (
+                      {item.pdfUrl ? (
+                         <Button variant="secondary" size="sm" asChild>
+                           <Link href={item.pdfUrl} target="_blank">
+                              View Certificate <Eye className="ml-2 h-4 w-4" />
+                           </Link>
+                         </Button>
+                      ) : certImage ? (
                         <Dialog>
                           <DialogTrigger asChild>
                             <Button variant="secondary" size="sm">
@@ -131,7 +138,7 @@ export function ResumeSection() {
                             </div>
                           </DialogContent>
                         </Dialog>
-                      )}
+                      ) : null}
                     </CardFooter>
                   </Card>
                 );
