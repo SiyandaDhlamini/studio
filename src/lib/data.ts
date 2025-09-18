@@ -77,6 +77,12 @@ export const skills = {
 
 export const experience = [
   {
+    role: 'Rental Sales Agent',
+    company: 'First Car Rental',
+    period: '2023',
+    description: '',
+  },
+  {
     role: 'Office Assistant',
     company: 'Training Force',
     period: '2020',
