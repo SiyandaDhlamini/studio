@@ -107,7 +107,6 @@ export type Certification = {
   name: string;
   period: string;
   description: string;
-  imageUrl?: string;
   pdfUrl?: string;
 };
 

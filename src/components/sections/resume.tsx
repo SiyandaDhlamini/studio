@@ -11,18 +11,8 @@ import {
   CardTitle,
   CardFooter,
 } from '@/components/ui/card';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
 import { education, experience, certifications } from '@/lib/data';
 import React from 'react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
 export function ResumeSection() {
@@ -93,9 +83,6 @@ export function ResumeSection() {
             </h3>
             <div className="space-y-4">
               {certifications.map((item, index) => {
-                const certImage = PlaceHolderImages.find(
-                  (img) => img.id === item.imageUrl
-                );
                 return (
                   <Card key={index} className="flex flex-col">
                     <CardHeader className="flex-grow">
