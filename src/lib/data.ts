@@ -37,7 +37,7 @@ export const projects = [
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
   },
   {
-    title: 'Data Visualization Dashboard',
+    title: 'Lesson Craft',
     description:
       'A responsive dashboard for visualizing complex datasets, providing insightful analytics through interactive charts and graphs.',
     image: 'project-2',
