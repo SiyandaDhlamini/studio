@@ -30,7 +30,7 @@ export const projects = [
   {
     title: 'AI Resume Builder Platform',
     description:
-      'A full-stack e-commerce website with features like product catalog, shopping cart, and user authentication, built with a modern tech stack.',
+      'AI Resume Platform is an intelligent tool designed to help job seekers create professional, tailored resumes effortlessly.Leveraging artificial Intelligence, the platform analyzes your skills, experience, and career goals to generate optimized resumes that stand out to recruiters and applicant tracking systems (ATS)',
     image: '/AI Resume Builder.png',
     liveUrl: '#',
     repoUrl: '#',
