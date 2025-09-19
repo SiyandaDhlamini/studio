@@ -49,7 +49,7 @@ export const projects = [
     title: 'Chatbot',
     description:
       'A cross-platform mobile application that helps users plan trips, discover new destinations, and book accommodations on the go.',
-    image: 'project-3',
+    image: '/Chatbot.PNG',
     liveUrl: '#',
     repoUrl: '#',
     tags: ['React Native', 'Firebase', 'Google Maps API'],
