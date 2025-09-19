@@ -50,7 +50,7 @@ export const projects = [
     description:
       'A cross-platform mobile application that helps users plan trips, discover new destinations, and book accommodations on the go.',
     image: '/Chatbot.PNG',
-    liveUrl: '#',
+    liveUrl: 'https://teams.microsoft.com/l/message/19:2e7a2881fc124372a5b36f09e0a697ab@thread.tacv2/1753952334283?tenantId=a3f14f21-237f-4028-b978-425eb768a716&groupId=6672fbb1-3b79-4a7e-b5b6-92c2973b2885&parentMessageId=1753952334283&teamName=Systems%20Support(Demand%205)&channelName=Netfusion%20Operations&createdTime=1753952334283&ngc=true',
     repoUrl: '#',
     tags: ['React Native', 'Firebase', 'Google Maps API'],
   },
