@@ -46,7 +46,7 @@ export const projects = [
     tags: ['React', 'D3.js', 'Node.js', 'Express'],
   },
   {
-    title: 'Mobile Travel App',
+    title: 'Chatbot',
     description:
       'A cross-platform mobile application that helps users plan trips, discover new destinations, and book accommodations on the go.',
     image: 'project-3',
