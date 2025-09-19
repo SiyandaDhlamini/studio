@@ -41,7 +41,7 @@ export const projects = [
     description:
       'A responsive dashboard for visualizing complex datasets, providing insightful analytics through interactive charts and graphs.',
     image: '/LessonCraft.PNG',
-    liveUrl: '#',
+    liveUrl: '/study.html',
     repoUrl: '#',
     tags: ['React', 'D3.js', 'Node.js', 'Express'],
   },
