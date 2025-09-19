@@ -8,10 +8,10 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "project-1",
-      "description": "Screenshot of an e-commerce platform project.",
-      "imageUrl": "https://picsum.photos/seed/project1/600/400",
-      "imageHint": "web design"
+      "id": "project-ai-resume-builder",
+      "description": "Screenshot of an AI Resume Builder platform project.",
+      "imageUrl": "https://picsum.photos/seed/project-ai-resume/600/400",
+      "imageHint": "AI builder"
     },
     {
       "id": "project-2",

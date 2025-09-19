@@ -31,7 +31,7 @@ export const projects = [
     title: 'AI Resume Builder Platform',
     description:
       'A full-stack e-commerce website with features like product catalog, shopping cart, and user authentication, built with a modern tech stack.',
-    image: 'project-1',
+    image: 'project-ai-resume-builder',
     liveUrl: '#',
     repoUrl: '#',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
