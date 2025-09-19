@@ -32,7 +32,7 @@ export const projects = [
     description:
       'AI Resume Platform is an intelligent tool designed to help job seekers create professional, tailored resumes effortlessly.Leveraging artificial Intelligence, the platform analyzes your skills, experience, and career goals to generate optimized resumes that stand out to recruiters and applicant tracking systems (ATS)',
     image: '/AI Resume Builder.png',
-    liveUrl: '#',
+    liveUrl: 'https://llamacoder.together.ai/share/v2/Q5yB7Ufwy4xR1QcP',
     repoUrl: '#',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
   },
