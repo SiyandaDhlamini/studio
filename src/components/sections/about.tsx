@@ -11,24 +11,23 @@ export function AboutSection() {
         </div>
         <div className="md:col-span-3 space-y-6 text-lg text-muted-foreground">
           <p>
-            Hello! I'm Siyanda, a dedicated and creative developer with a passion
-            for building beautiful and functional digital experiences. My journey
-            into technology started with a fascination for how things work, which
-            led me to pursue a degree in Computer Science.
+            Hello, I’m Siyanda — a versatile IT and AI professional passionate
+            about leveraging technology to solve real-world problems. I have
+            experience in IT system support, office administration, and
+            generative AI, including prompt engineering, large language models,
+            and ethical AI practices.
           </p>
           <p>
-            Throughout my studies and internships, I've honed my skills in both
-            front-end and back-end development, allowing me to bring ideas to
-            life from concept to deployment. I thrive in collaborative
-            environments and enjoy solving complex problems with clean,
-            efficient code.
+            I enjoy combining technical expertise with creativity to develop
+            innovative solutions, streamline processes, and enhance
+            productivity. Whether it’s troubleshooting IT systems, optimizing
+            workflows, or experimenting with cutting-edge AI tools like
+            ChatGPT, I thrive on making technology work smarter for people.
           </p>
           <p>
-            My goal is to leverage my skills to contribute to innovative projects
-            that make a positive impact. I am a lifelong learner, constantly
-            exploring new technologies and methodologies to stay at the forefront
-            of web development. When I'm not coding, you can find me exploring
-            hiking trails or experimenting with new recipes.
+            I’m always eager to learn, collaborate, and contribute to projects
+            that push the boundaries of innovation while delivering tangible
+            impact.
           </p>
         </div>
       </div>
