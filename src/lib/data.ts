@@ -40,7 +40,7 @@ export const projects = [
     title: 'Lesson Craft',
     description:
       'A responsive dashboard for visualizing complex datasets, providing insightful analytics through interactive charts and graphs.',
-    image: 'project-2',
+    image: '/LessonCraft.PNG',
     liveUrl: '#',
     repoUrl: '#',
     tags: ['React', 'D3.js', 'Node.js', 'Express'],
