@@ -2,13 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SectionWrapper } from '@/components/section-wrapper';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
-  const profileImage = PlaceHolderImages.find(
-    (img) => img.id === 'siyanda-profile'
-  );
-
   return (
     <SectionWrapper id="home" className="bg-secondary/50">
       <div className="grid gap-12 md:grid-cols-2 items-center">
@@ -30,17 +25,14 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
-          {profileImage && (
-            <Image
-              src={profileImage.imageUrl}
-              alt={profileImage.description}
-              width={400}
-              height={400}
-              priority
-              className="rounded-full object-cover shadow-lg border-4 border-card"
-              data-ai-hint={profileImage.imageHint}
-            />
-          )}
+          <Image
+            src="/elegance.png"
+            alt="Siyanda Dhlamini profile picture"
+            width={400}
+            height={400}
+            priority
+            className="rounded-full object-cover shadow-lg border-4 border-card"
+          />
         </div>
       </div>
     </SectionWrapper>
