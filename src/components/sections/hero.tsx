@@ -26,7 +26,7 @@ export function HeroSection() {
         </div>
         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
           <Image
-            src="/elegance.png"
+            src="/Elegance.png"
             alt="Siyanda Dhlamini profile picture"
             width={400}
             height={400}
