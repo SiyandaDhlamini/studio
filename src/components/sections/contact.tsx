@@ -22,7 +22,7 @@ export function ContactSection() {
         <Card>
           <CardContent className="p-6 md:p-8">
             <form 
-              action="mailto:siyandanxele68@gmail.com"
+              action="mailto:dhlaminisiyanda68@gmail.com"
               method="POST"
               encType="text/plain"
               className="grid gap-6"

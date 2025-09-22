@@ -22,7 +22,7 @@ export const socialLinks = [
     href: 'https://github.com/siyandadhlamini',
     icon: Github,
   },
-  { name: 'Email', href: 'mailto:siyandanxele68@gmail.com', icon: Mail },
+  { name: 'Email', href: 'mailto:dhlaminisiyanda68@gmail.com', icon: Mail },
   { name: 'Call', href: 'tel:+27737846410', icon: Phone },
 ];
 
