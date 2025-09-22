@@ -112,7 +112,7 @@ export function ResumeSection() {
       </div>
       <div className="text-center mt-16">
         <Button asChild size="lg">
-          <a href="/siyanda_dhlamini_resume.pdf" download>
+          <a href="/Resume.pdf" download>
             <Download className="mr-2 h-5 w-5" />
             Download My Resume
           </a>
