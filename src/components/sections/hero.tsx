@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SectionWrapper } from '@/components/section-wrapper';
+import { Download } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <SectionWrapper id="home" className="bg-secondary/50">
+    <SectionWrapper id="home" className="bg-secondary/50 pt-24 md:pt-32 lg:pt-40">
       <div className="grid gap-12 md:grid-cols-2 items-center">
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
@@ -20,7 +21,10 @@ export function HeroSection() {
               <Link href="#contact">Get in Touch</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#projects">View My Work</Link>
+              <a href="/Resume.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>

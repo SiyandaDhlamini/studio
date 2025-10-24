@@ -1,4 +1,3 @@
-
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -22,12 +21,12 @@ export function ContactSection() {
       <div className="mx-auto max-w-4xl">
         <Card>
           <CardContent className="p-6 md:p-8">
-            <form 
-              action="mailto:dhlaminisiyanda68@gmail.com"
-              method="POST"
-              encType="text/plain"
-              className="grid gap-6"
-            >
+            <div className="grid gap-6">
+              <div className="space-y-2 text-center">
+                <p className="text-muted-foreground">
+                  Please use the social links below to get in touch or fill out this form to send me an email.
+                </p>
+              </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
@@ -35,7 +34,12 @@ export function ContactSection() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" type="email" placeholder="your@email.com" />
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="your@email.com"
+                  />
                 </div>
               </div>
               <div className="space-y-2">
@@ -48,11 +52,11 @@ export function ContactSection() {
                 />
               </div>
               <div className="flex justify-end">
-                <Button type="submit" className="w-full md:w-auto">
+                <Button type="submit" className="w-full md:w-auto" disabled>
                   Send Message
                 </Button>
               </div>
-            </form>
+            </div>
           </CardContent>
         </Card>
 
@@ -61,7 +65,12 @@ export function ContactSection() {
           <div className="flex justify-center gap-4">
             {socialLinks.map((link) => (
               <Button key={link.name} variant="outline" size="icon" asChild>
-                <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                >
                   <link.icon className="h-5 w-5" />
                 </a>
               </Button>

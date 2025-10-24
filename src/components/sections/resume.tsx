@@ -1,20 +1,11 @@
-
-'use client';
-
-import { Eye } from 'lucide-react';
 import { SectionWrapper } from '@/components/section-wrapper';
-import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from '@/components/ui/card';
-import { education, experience, certifications } from '@/lib/data';
-import React from 'react';
-import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { education, experience } from '@/lib/data';
 
 export function ResumeSection() {
   return (
@@ -30,7 +21,7 @@ export function ResumeSection() {
 
       <div className="grid gap-12 md:grid-cols-2">
         <div>
-          <h3 className="font-headline text-2xl font-semibold mb-6">
+          <h3 className="font-headline text-2xl font-semibold mb-6 text-center md:text-left">
             Work Experience
           </h3>
           <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
@@ -58,65 +49,26 @@ export function ResumeSection() {
             ))}
           </div>
         </div>
-        <div className='space-y-12'>
-          <div>
-            <h3 className="font-headline text-2xl font-semibold mb-6">
-              Education
-            </h3>
-            <div className="space-y-4">
-              {education.map((item, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <p className="text-muted-foreground">{item.period}</p>
-                    <CardTitle className="font-headline">{item.degree}</CardTitle>
-                    <p className="font-semibold text-primary">{item.institution}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm">{item.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="font-headline text-2xl font-semibold mb-6">
-              Certifications
-            </h3>
-            <div className="space-y-4">
-              {certifications.map((item, index) => {
-                return (
-                  <Card key={index} className="flex flex-col">
-                    <CardHeader className="flex-grow">
-                      <p className="text-muted-foreground">{item.period}</p>
-                      <CardTitle className="font-headline">{item.name}</CardTitle>
-                      <p className="font-semibold text-primary">{item.institution}</p>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
-                    </CardContent>
-                    <CardFooter className="flex-wrap gap-2 justify-end">
-                      {item.pdfUrl && (
-                         <Button variant="secondary" size="sm" asChild>
-                           <Link href={item.pdfUrl} target="_blank">
-                              View Certificate <Eye className="ml-2 h-4 w-4" />
-                           </Link>
-                         </Button>
-                      )}
-                    </CardFooter>
-                  </Card>
-                );
-              })}
-            </div>
+        
+        <div>
+          <h3 className="font-headline text-2xl font-semibold mb-6 text-center md:text-left">
+            Education
+          </h3>
+          <div className="space-y-4">
+            {education.map((item, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <p className="text-muted-foreground">{item.period}</p>
+                  <CardTitle className="font-headline">{item.degree}</CardTitle>
+                  <p className="font-semibold text-primary">{item.institution}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
-      </div>
-      <div className="text-center mt-16">
-        <Button asChild size="lg">
-          <a href="/Resume.pdf" download>
-            <Download className="mr-2 h-5 w-5" />
-            Download My Resume
-          </a>
-        </Button>
       </div>
     </SectionWrapper>
   );

@@ -8,6 +8,7 @@ export const navLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#resume' },
+  { name: 'Certifications', href: '#certifications' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -33,7 +34,7 @@ export const projects = [
       'AI Resume Platform is an intelligent tool designed to help job seekers create professional, tailored resumes effortlessly.Leveraging artificial Intelligence, the platform analyzes your skills, experience, and career goals to generate optimized resumes that stand out to recruiters and applicant tracking systems (ATS)',
     image: '/AI Resume Builder.png',
     liveUrl: 'https://llamacoder.together.ai/share/v2/Q5yB7Ufwy4xR1QcP',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/siyandadhlamini',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
   },
   {
@@ -42,7 +43,7 @@ export const projects = [
       'A responsive dashboard for visualizing complex datasets, providing insightful analytics through interactive charts and graphs.',
     image: '/LessonCraft.PNG',
     liveUrl: '/study.html',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/siyandadhlamini',
     tags: ['React', 'D3.js', 'Node.js', 'Express'],
   },
   {
@@ -51,7 +52,7 @@ export const projects = [
       'A cross-platform mobile application that helps users plan trips, discover new destinations, and book accommodations on the go.',
     image: '/Chatbot.PNG',
     liveUrl: 'https://poe.com/NETFUSEBOT',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/siyandadhlamini',
     tags: ['React Native', 'Firebase', 'Google Maps API'],
   },
 ];

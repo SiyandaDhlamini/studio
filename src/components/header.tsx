@@ -90,13 +90,9 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden pl-6 md:flex items-center">
-          {socialIcons}
-        </div>
-
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button variant="ghost" size="icon" className="md:hidden ml-auto">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open navigation menu</span>
             </Button>
