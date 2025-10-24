@@ -111,7 +111,7 @@ export const certifications: Certification[] = [
     institution: 'College of Cape Town',
     name: 'Electrical Engineering',
     period: '2015',
-    description: '',
+    description: 'This Electrical Engineering certificate provided a strong foundation in both theoretical and practical aspects of electrical systems. The curriculum included Industrial Electronics, focusing on the operation and control of industrial electrical equipment and circuits; Engineering Science, covering the principles of physics and mechanics as applied to electrical systems; Electrical Trade Theory, which explored wiring, installation, and maintenance practices in the electrical trade; and Mathematics, developing analytical and problem-solving skills essential for engineering applications. The program emphasized hands-on training, safety standards, and the application of engineering concepts to real-world electrical systems.',
   },
   {
     institution: 'Google',
