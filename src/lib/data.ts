@@ -21,7 +21,7 @@ export const socialLinks = [
     href: 'https://github.com/siyandadhlamini',
     icon: Github,
   },
-  { name: 'Email', href: 'mailto:dhlaminisiyanda68@gmail.com', icon: Mail },
+  { name: 'Email', href: 'mailto:siyandanxele68@gmail.com', icon: Mail },
 ];
 
 export const projects = [
@@ -107,6 +107,12 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
+  {
+    institution: 'College of Cape Town',
+    name: 'Electrical Engineering',
+    period: '2015',
+    description: '',
+  },
   {
     institution: 'Google',
     name: 'Python for Data Science and AI',

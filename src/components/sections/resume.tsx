@@ -19,27 +19,7 @@ export function ResumeSection() {
         </p>
       </div>
 
-      <div className="grid gap-16">
-        <div>
-          <h3 className="font-headline text-2xl font-semibold mb-8 text-center">
-            Education
-          </h3>
-          <div className="space-y-4 max-w-4xl mx-auto">
-            {education.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <p className="text-muted-foreground">{item.period}</p>
-                  <CardTitle className="font-headline">{item.degree}</CardTitle>
-                  <p className="font-semibold text-primary">{item.institution}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
+      <div className="grid gap-16 lg:grid-cols-1">
         <div>
           <h3 className="font-headline text-2xl font-semibold mb-8 text-center">
             Work Experience
@@ -69,6 +49,25 @@ export function ResumeSection() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+        <div>
+          <h3 className="font-headline text-2xl font-semibold mb-8 text-center">
+            Education
+          </h3>
+          <div className="space-y-4 max-w-4xl mx-auto">
+            {education.map((item, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <p className="text-muted-foreground">{item.period}</p>
+                  <CardTitle className="font-headline">{item.degree}</CardTitle>
+                  <p className="font-semibold text-primary">{item.institution}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
