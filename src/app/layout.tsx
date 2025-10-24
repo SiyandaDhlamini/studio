@@ -1,13 +1,19 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Space_Grotesk, Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
-const roboto = Roboto({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--font-roboto',
+  variable: '--font-space-grotesk',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -26,7 +32,8 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
-          roboto.variable
+          spaceGrotesk.variable,
+          inter.variable
         )}
       >
         {children}
