@@ -12,14 +12,34 @@ export function ResumeSection() {
     <SectionWrapper id="resume" className="bg-secondary/50">
       <div className="text-center mb-12">
         <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-          Experience & Education
+          Education & Experience
         </h2>
         <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-          My professional journey and academic background.
+          My academic background and professional journey.
         </p>
       </div>
 
       <div className="grid gap-12 md:grid-cols-2">
+        <div>
+          <h3 className="font-headline text-2xl font-semibold mb-6 text-center md:text-left">
+            Education
+          </h3>
+          <div className="space-y-4">
+            {education.map((item, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <p className="text-muted-foreground">{item.period}</p>
+                  <CardTitle className="font-headline">{item.degree}</CardTitle>
+                  <p className="font-semibold text-primary">{item.institution}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         <div>
           <h3 className="font-headline text-2xl font-semibold mb-6 text-center md:text-left">
             Work Experience
@@ -46,26 +66,6 @@ export function ResumeSection() {
                   </Card>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-        
-        <div>
-          <h3 className="font-headline text-2xl font-semibold mb-6 text-center md:text-left">
-            Education
-          </h3>
-          <div className="space-y-4">
-            {education.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <p className="text-muted-foreground">{item.period}</p>
-                  <CardTitle className="font-headline">{item.degree}</CardTitle>
-                  <p className="font-semibold text-primary">{item.institution}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
-                </CardContent>
-              </Card>
             ))}
           </div>
         </div>
