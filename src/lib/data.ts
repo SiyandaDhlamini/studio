@@ -1,6 +1,5 @@
 
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
-import type { StaticImageData } from 'next/image';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export const navLinks = [
   { name: 'Home', href: '#home' },
@@ -24,7 +23,6 @@ export const socialLinks = [
     icon: Github,
   },
   { name: 'Email', href: 'mailto:dhlaminisiyanda68@gmail.com', icon: Mail },
-  { name: 'Call', href: 'tel:+27737846410', icon: Phone },
 ];
 
 export const projects = [

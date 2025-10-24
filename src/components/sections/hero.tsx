@@ -28,12 +28,12 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
+        <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
           <Image
             src="/Elegance.png"
             alt="Siyanda Dhlamini profile picture"
-            width={400}
-            height={400}
+            width={320}
+            height={320}
             priority
             className="rounded-full object-cover shadow-lg border-4 border-card"
           />

@@ -90,6 +90,10 @@ export function Header() {
           ))}
         </nav>
 
+        <div className="hidden md:flex items-center gap-2 ml-4">
+          {/* Social icons are not rendered here anymore */}
+        </div>
+
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden ml-auto">

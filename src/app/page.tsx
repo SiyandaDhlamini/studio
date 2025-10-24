@@ -7,7 +7,6 @@ import { ResumeSection } from '@/components/sections/resume';
 import { CertificationsSection } from '@/components/sections/certifications';
 import { ContactSection } from '@/components/sections/contact';
 import { Footer } from '@/components/footer';
-import { AiSuggester } from '@/components/ai-suggester';
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      <AiSuggester />
     </div>
   );
 }
