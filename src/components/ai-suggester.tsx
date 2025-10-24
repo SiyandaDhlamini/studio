@@ -93,7 +93,7 @@ export function AiSuggester() {
             </SheetTitle>
             <SheetDescription>
               Get personalized feedback and ideas to improve your portfolio's
-              look and feel.
+              look and feel. Just describe your current portfolio and what you're looking for!
             </SheetDescription>
           </SheetHeader>
           <div className="grid gap-6 py-4">

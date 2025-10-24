@@ -1,3 +1,5 @@
+'use client';
+
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -5,8 +7,44 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { socialLinks } from '@/lib/data';
+import { useToast } from '@/hooks/use-toast';
+import { useState } from 'react';
 
 export function ContactSection() {
+  const { toast } = useToast();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = `Message from ${name} (${email})`;
+    const mailtoLink = `mailto:siyandanxele68@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    
+    // Check if the link opens a new window, which it should
+    const newWindow = window.open(mailtoLink, '_blank');
+
+    if (newWindow) {
+        newWindow.focus();
+        toast({
+          title: 'Email client opened',
+          description: "Please send your message using your email application.",
+        });
+        // Clear form after a short delay
+        setTimeout(() => {
+          setName('');
+          setEmail('');
+          setMessage('');
+        }, 1000);
+    } else {
+        toast({
+            title: 'Could not open email client',
+            description: "Your browser may be blocking pop-ups. You can email me directly at siyandanxele68@gmail.com",
+            variant: 'destructive',
+        });
+    }
+  };
+
   return (
     <SectionWrapper id="contact">
       <div className="text-center mb-12">
@@ -21,7 +59,7 @@ export function ContactSection() {
       <div className="mx-auto max-w-4xl">
         <Card>
           <CardContent className="p-6 md:p-8">
-            <div className="grid gap-6">
+            <form onSubmit={handleSubmit} className="grid gap-6">
               <div className="space-y-2 text-center">
                 <p className="text-muted-foreground">
                   Please use the social links below to get in touch or fill out this form to send me an email.
@@ -30,7 +68,7 @@ export function ContactSection() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" name="name" placeholder="Your Name" />
+                  <Input id="name" name="name" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
@@ -39,6 +77,7 @@ export function ContactSection() {
                     name="email"
                     type="email"
                     placeholder="your@email.com"
+                    value={email} onChange={(e) => setEmail(e.target.value)} required
                   />
                 </div>
               </div>
@@ -49,14 +88,15 @@ export function ContactSection() {
                   name="message"
                   placeholder="Your message..."
                   className="min-h-[150px]"
+                  value={message} onChange={(e) => setMessage(e.target.value)} required
                 />
               </div>
               <div className="flex justify-end">
-                <Button type="submit" className="w-full md:w-auto" disabled>
+                <Button type="submit" className="w-full md:w-auto">
                   Send Message
                 </Button>
               </div>
-            </div>
+            </form>
           </CardContent>
         </Card>
 

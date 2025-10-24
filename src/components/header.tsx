@@ -91,7 +91,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2 ml-4">
-          {/* Social icons are not rendered here anymore */}
+          {socialIcons}
         </div>
 
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>

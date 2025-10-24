@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export const navLinks = [
